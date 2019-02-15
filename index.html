@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Teko" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
+	<title>SpaceX</title>
+</head>
+<body>
+	<header>
+		<div id="header-container" class="first-container">
+			<div id="crew-block" class="header-block">
+      	<div class="header__text">
+        <small class="header-title">Crew</small>
+        <div class="header-value">DRAGON</div>
+      	</div>
+    		</div>
+		<div id="perigee-block" class="header-block">
+		<div class="header-text"><small header-title>Perigee</small>
+		<div id="perigee" class="header-value">180.013<span>m</span></div></div>
+		<div class="header__icon">
+        <i class="icon icon-minus"></i>
+      </div>
+	</div>
+		<div id="apogee-block" class="header-block">
+		<div class="header-text"><small header-title>Apogee</small>
+		<div id="apogee" class="header-value">360.304<span>m</span></div></div>
+		<div class="header__icon">
+        <i class="icon icon-minus"></i>
+      </div>
+	</div>
+		<div id="relative-atitude-block" class="header-block">
+		<div class="header-text"><small header-title>Relative Atitude</small>
+		<div id="altitude" class="header-value">50,948<span>m</span></div></div>
+		<div class="header__icon">
+        <i class="icon icon-minus"></i>
+      </div>
+	</div>
+		<div id="range-block" class="header-block">
+		<div class="header-text"><small header-title>Range to ISS</small>
+		<div id="range" class="header-value">625,713<span>m</span></div></div>
+		<div class="header__icon">
+        <i class="icon icon-minus"></i>
+      </div>
+	</div>
+	</div>
+	</header>
+
+	<main>
+		<div id="main-container">
+	<section>
+		<img id="planet-view-image" class="background" src="https://i.imgur.com/cFCIfUb.jpg" alt="#" />
+	</section>
+
+	<section>
+		<div class="row general">
+    <div class="general__day">
+      <small class="general__day-title">Day 131</small>
+      <div class="general__day-time">::</div>
+    </div>
+    <div class="general__values">
+      <div class="general__chart speed-chart"></div>
+      <div class="general__next">
+        <div class="next_burn">
+          <div class="next_burn__header">
+            <div class="next_burn__title">Next Burn</div>
+            <div class="next_burn__status">Enabled</div>
+          </div>
+          <div class="next_burn__value">-0:05:48</div>
+          <div class="next_burn__datetime">
+            <div class="next_burn__time">13:52:00</div>
+            <div class="next_burn__day">Day 131</div>
+          </div>
+        </div>
+      </div>
+      <div class="general__target">
+        <div class="target">
+          <div class="target__header">Target V</div>
+          <div class="target__value">33.5 m/s</div>
+          <div class="target__status">Thruster Temps</div>
+        </div>
+      </div>
+    </div>
+  </div>
+	</section>
+
+	<section>
+	<div class="row notifications">
+    <div class="notifications__alarms">
+      <span id="alarms-count">0</span><span id="alarm-text">Alarms</span>
+    </div>
+    <div class="notifications__all">
+      <span id="system-msg">All systems nominal</span>
+      <i class="icon icon-ok"></i>
+    </div>
+  </div>
+	</section>
+
+	<section>
+		<div class="row los">
+    <div class="los__left">
+      <div class="los__next">
+        <div class="los__next_left">-0:08:24</div>
+        <div class="los__next_label">
+          <span>Next Los</span>
+          <span>(00:03:17)</span>
+        </div>
+        <div class="los__next_time">
+          <span>13:54:36</span>
+          <span class="los__next_day">Day 131</span>
+        </div>
+      </div>
+      <div class="los__estimated">
+        <div class="los__estimated_left">-02:51:02</div>
+        <div class="los__estimated_label">
+          <span>Estimated ISS Arrival</span>
+        </div>
+        <div class="los__estimated_time">
+          <span>16:37:15</span>
+          <span class="los__estimated_day">Day 131</span>
+        </div>
+      </div>
+    </div>
+    <div class="los__right">
+      <div class="los__deorbit">
+        <div class="los__deorbit_left">-0:23:23</div>
+        <div class="los__deorbit_label">
+          <span>Next Deorbit Window</span>
+          <span>Pacific</span>
+        </div>
+        <div class="los__deorbit_time">
+          <span>14:09:36</span>
+          <span class="los__deorbit_day">Day 131</span>
+        </div>
+      </div>
+      <div class="los__breakout">
+        <div class="los__breakout_left">
+          <div class="los__breakout_label">Current breakdown</div>
+          <div class="los__breakout_help">Retrograde</div>
+        </div>
+        <div class="los__breakout_value">V = 5.0 m/s</div>
+      </div>
+    </div>
+  </div>
+	</section>
+
+	<section>
+		<div id="schedule-block">
+				<div class="schedule__header">
+			      <div class="schedule__header-left">Schedule</div>
+			      <div class="schedule__header-right">
+			        <span>All events</span>
+			        <i class="icon icon-minus"></i>
+			      </div>
+			    </div>
+			<div id="timing" class="timing-block">
+				<div id="timing-distance" class="timing-hours border-line">
+					<div class="timing-hours-block">13:10:00</div>
+					<div class="timing-hours-block">13:37:00</div>
+					<div class="timing-hours-block">13:46:45</div>
+					<div class="timing-hours-block">13:52:10</div>
+				</div>
+				<div id="timing-rendezvous" class="rendezvous">
+					<div id="burn-ground" class="randezvous-burn">
+						<div class="burn-block">Rendezvous Burn GO/NO-GO</div>
+						<div class="ground-block">Ground</div>
+					</div>
+					<div id="burn-crew" class="randezvous-burn line-burn">
+						<div class="burn-block">Prepare for randezvous burn</div>
+						<div class="ground-block">Crew</div>
+					</div>
+					<div id="burn-slow-dragon" class="randezvous-burn line-burn">
+						<div class="burn-block">Rendezvous burn slow</div>
+						<div class="ground-block">Dragon</div>
+					</div>
+					<div id="burn-dragon" class="randezvous-burn line-burn">
+						<div class="burn-block">Rendezvous Burn</div>
+						<div class="ground-block">Dragon</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+</main>
+
+	<footer>
+		<div id="footer-container">
+			<div class="rendezvous-approach">
+				<div class="rendezvous">Rendezvous</div>
+				<div class="approach">Approach</div>
+			</div>
+			<div id="down-table">
+				<div class="ground-blocks">
+					<div class="ground">Ground</div>
+					<div class="ground">2</div>
+					<div class="ground">3</div>
+					<div class="ground">4</div>
+					<div class="ground">5</div>
+					<div class="ground">6</div>
+					<div class="ground">7</div>
+					<div class="ground">8</div>
+					<div class="ground">9</div>
+					<div class="ground">10</div>
+				</div>
+					<div class="ground-blocks">
+					<div class="ground">TDRS</div>
+					<div class="ground">2</div>
+					<div class="ground">3</div>
+					<div class="ground">4</div>
+					<div class="ground">5</div>
+					<div class="ground">6</div>
+					<div class="ground">7</div>
+					<div class="ground">8</div>
+					<div class="ground">9</div>
+					<div class="ground">10</div>
+				</div>
+					<div class="ground-blocks">
+					<div class="ground">ISS</div>
+					<div class="ground">2</div>
+					<div class="ground">3</div>
+					<div class="ground">4</div>
+					<div class="ground">5</div>
+					<div class="ground">6</div>
+					<div class="ground">7</div>
+					<div class="ground">8</div>
+					<div class="ground">9</div>
+					<div class="ground">10</div>
+				</div>
+					<div class="ground-blocks">
+					<div class="ground">Eclipse</div>
+					<div class="ground">2</div>
+					<div class="ground">3</div>
+					<div class="ground">4</div>
+					<div class="ground">5</div>
+					<div class="ground">6</div>
+					<div class="ground">7</div>
+					<div class="ground">8</div>
+					<div class="ground">9</div>
+					<div class="ground">10</div>
+				</div>
+					<div class="ground-blocks">
+					<div class="ground">Burn</div>
+					<div class="ground">2</div>
+					<div class="ground">3</div>
+					<div class="ground">4</div>
+					<div class="ground">5</div>
+					<div class="ground">6</div>
+					<div class="ground">7</div>
+					<div class="ground">8</div>
+					<div class="ground">9</div>
+					<div class="ground">10</div>
+				</div>
+					<div class="ground-blocks">
+					<div class="ground">Crew</div>
+					<div class="ground">2</div>
+					<div class="ground">3</div>
+					<div class="ground">4</div>
+					<div class="ground">5</div>
+					<div class="ground">6</div>
+					<div class="ground">7</div>
+					<div class="ground">8</div>
+					<div class="ground">9</div>
+					<div class="ground">10</div>
+				</div>
+				<div class="down-time-block"></div>
+			</div>
+		<div class="row progress">
+		    <div class="progress__value"></div>
+		  </div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html> 
