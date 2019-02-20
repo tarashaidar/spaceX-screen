@@ -651,3 +651,8 @@ span.los__next_day, span.los__estimated_day, span.los__deorbit_day {
 .error {
     color: darkred;
 } 
+
+.fa-arrow-down{
+    color: rgb(183,232,238);
+    font-size: 40px;
+}
