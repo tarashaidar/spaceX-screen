@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Teko" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<title>SpaceX</title>
 </head>
@@ -13,33 +13,33 @@
 		<div id="header-container" class="first-container">
 			<div id="crew-block" class="header-block">
       	<div class="header__text">
-        <small class="header-title">Crew</small>
+        <small>Crew</small>
         <div class="header-value">DRAGON</div>
       	</div>
     		</div>
 		<div id="perigee-block" class="header-block">
-		<div class="header-text"><small header-title>Perigee</small>
+		<div class="header-text"><small>Perigee</small>
 		<div id="perigee" class="header-value">180.013<span>m</span></div></div>
 		<div class="header__icon">
         <i class="icon icon-minus"></i>
       </div>
 	</div>
 		<div id="apogee-block" class="header-block">
-		<div class="header-text"><small header-title>Apogee</small>
+		<div class="header-text"><small>Apogee</small>
 		<div id="apogee" class="header-value">360.304<span>m</span></div></div>
 		<div class="header__icon">
         <i class="icon icon-minus"></i>
       </div>
 	</div>
 		<div id="relative-atitude-block" class="header-block">
-		<div class="header-text"><small header-title>Relative Atitude</small>
+		<div class="header-text"><small>Relative Atitude</small>
 		<div id="altitude" class="header-value">50,948<span>m</span></div></div>
 		<div class="header__icon">
         <i class="fas fa-arrow-down "></i>
       </div>
 	</div>
 		<div id="range-block" class="header-block">
-		<div class="header-text"><small header-title>Range to ISS</small>
+		<div class="header-text"><small>Range to ISS</small>
 		<div id="range" class="header-value">625,713<span>m</span></div></div>
 		<div class="header__icon">
         <i class="fas fa-arrow-down"></i>
@@ -47,7 +47,6 @@
 	</div>
 	</div>
 	</header>
-
 	<main>
 		<div id="main-container">
 	<section>
@@ -61,7 +60,8 @@
       <div class="general__day-time">::</div>
     </div>
     <div class="general__values">
-      <div class="general__chart speed-chart"></div>
+      <div class="general__chart speed-chart">
+      </div>
       <div class="general__next">
         <div class="next_burn">
           <div class="next_burn__header">
@@ -273,6 +273,6 @@
 		</div>
 	</footer>
 
-	<script src="script.js"></script>
+	<script src="script/script.js"></script>
 </body>
 </html> 
